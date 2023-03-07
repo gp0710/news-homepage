@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+/* reset styles */
+* {
+  color: inherit;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter";
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px dotted #efefef;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 a {
+  color: red;
+}
+
+body {
+  font-family: "Inter";
+  line-height: 1.3;
+}
+
+nav {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+nav div#side-bar {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  background: white;
+  margin: -1rem;
+  padding: 1rem;
+  left: 150px;
+}
+nav div#side-bar.active {
+  left: 350px;
+}
+nav div#toggle-btn {
+  display: inherit;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 2.5rem;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  padding: 3rem;
+}
+
+main {
+  row-gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+main div#hero {
+  background-image: url("/assets/images/image-web-3-mobile.jpg");
+  max-width: 100%;
+  height: 375px;
+}
+main h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1;
+}
+main p {
+  color: hsl(236, 13%, 42%);
+}
+main button {
+  border: none;
+  background: hsl(5, 85%, 63%);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  width: fit-content;
+}
+
+div.new {
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+  padding: 1rem;
+  line-height: 1.5;
+  row-gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 0 2.5rem 0;
+}
+div.new h2 {
+  color: hsl(35, 77%, 62%);
+}
+div.new p {
+  color: hsl(233, 8%, 79%);
+}
+div.new hr {
+  border-top: 1px solid hsl(233, 8%, 79%);
+}
+
+div#trending {
+  row-gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+div#trending div.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1.5rem;
+}
+div#trending div.card div.card-image img {
+  max-width: fit-content;
+  height: 140px;
+}
+div#trending div.card div.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  row-gap: 0.5rem;
+  line-height: 1.5;
+}
+div#trending div.card div.content h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 2rem;
+  color: hsl(233, 8%, 79%);
+}
